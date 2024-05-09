@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finale</title>
+    <style>
+        body {
+            background-color: #f9f6f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            border: 2px solid #e0e0e0;
+            transform: scale(0.9);
+            opacity: 0;
+            animation: scaleIn 1s ease-out forwards, fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            border-left: 4px solid #007BFF;
+            padding-left: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+            text-align: left;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 30px;
+            color: #555;
+        }
+
+        .signature strong {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .signature span {
+            font-size: 18px;
+            color: #777;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: #ff5500;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            pre {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You for Choosing Our Hotel!</h1>
+        <pre>
+            Your room reservation has been accepted.
+
+            Dear Customer,
+
+            On behalf of the entire team at LE PAS VRAI,
+            we would like to extend our heartfelt gratitude
+            for choosing to book a room with us. We are thrilled
+            and honored to be a part of your upcoming stay,
+            and we can't wait to provide you with an unforgettable experience.
+
+            Your reservation details are as follows:
+
+            Rest assured that we are diligently preparing for your arrival, ensuring that everything is set to exceed your expectations. Our commitment to providing exceptional service and creating cherished memories for our guests is at the core of our mission.
+
+            At LE PAS VRAI, we pride ourselves on offering a comfortable and inviting ambiance, top-notch amenities, and personalized attention to make your stay truly special. Whether you're here for business or leisure, our dedicated team is ready to cater to your every need, making your time with us a true delight.
+
+            During your stay, we invite you to indulge in our delectable dining options, explore the local attractions, or simply unwind and relax in the serene surroundings of our hotel. If there is anything specific you'd like to experience during your visit, please do not hesitate to let us know, and we'll be delighted to assist in making it happen.
+
+            Should you require any assistance before your arrival or during your stay, our friendly concierge team is available to provide guidance and recommendations.
+
+            Once again, thank you for entrusting us with your accommodation needs. We are eagerly looking forward to welcoming you to LE PAS VRAI and making your stay with us truly memorable.
+
+            If you have any further inquiries or special requests, please feel free to <span class="contact"><a href="tel:+123456789">contact us</a>.</span> Your satisfaction is our top priority, and we are here to ensure your stay with us is nothing short of exceptional.
+        </pre>
+        <div class="signature">
+            <strong>Managers of the hotel:</strong>
+            <span>Ayman alaa-105048811</span>
+            <span>AL MUNDHER MOHAMMED HASSAN-14682144</span>
+            <span>ALI NASSER ALI-13705346</span>
+        </div>
+    </div>
+</body>
+</html>
